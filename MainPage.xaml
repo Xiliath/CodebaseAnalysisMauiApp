@@ -1,0 +1,22 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CodebaseAnalysisMauiApp.MainPage">
+    <StackLayout Margin="20">
+        <Label Text="Enter instruction" />
+        <Editor x:Name="InputEditor" HeightRequest="100" />
+        <Button Text="Submit" Clicked="OnSubmitClicked" />
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Grid.Column="1">
+                <Label Text="Text for GPT" x:Name="CodebaseInfoLabel" />
+                <ScrollView HeightRequest="10000">
+                    <Editor x:Name="CodebaseInfo" IsReadOnly="True" />
+                </ScrollView>
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+</ContentPage>
