@@ -13,7 +13,7 @@
 
             <StackLayout Grid.Column="1">
                 <Label Text="Text for GPT" x:Name="CodebaseInfoLabel" />
-                <ScrollView HeightRequest="10000">
+                <ScrollView HeightRequest="800">
                     <Editor x:Name="CodebaseInfo" IsReadOnly="True" />
                 </ScrollView>
             </StackLayout>

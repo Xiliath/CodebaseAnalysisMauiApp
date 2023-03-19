@@ -22,7 +22,6 @@ namespace CodebaseAnalysisMauiApp
 
             var codebaseInfo = await _analyzer.GetCodebaseInfo(solutionPath, instruction);
             var codeBasestring = codebaseInfo.ToString();
-            Codebase.Text = codeBasestring;
 
             var codebaseInfoString = $"codebaseInfo: {codeBasestring}"; 
 
